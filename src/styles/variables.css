@@ -1,0 +1,46 @@
+:root {
+  /* Color Theme - Light Theme */
+  --primary-color: #00C5ED;
+  --primary-dark: #00a8c5;
+  --primary-light: #33d0f0;
+  --secondary-color: #00C5ED;
+  --accent-color: #00C5ED;
+  --accent-light: #33d0f0;
+  
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #f0f0f0;
+  --bg-gradient: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #ffffff 100%);
+  
+  /* Text Colors */
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-muted: #6b7280;
+  
+  /* Border & Shadow */
+  --border-color: rgba(0, 197, 237, 0.2);
+  --shadow-sm: 0 2px 8px rgba(0, 197, 237, 0.1);
+  --shadow-md: 0 4px 16px rgba(0, 197, 237, 0.15);
+  --shadow-lg: 0 8px 32px rgba(0, 197, 237, 0.2);
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
