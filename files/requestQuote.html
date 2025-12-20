@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Request Quote || Notech || Notech HTML Template For It Solution </title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <meta name="description" content="Notech HTML Template For It Solution" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="assets/vendors/notech-icons/style.css">
+    <link rel="stylesheet" href="assets/vendors/notech-two-icons/style.css">
+    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/reey-font/stylesheet.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bxslider/jquery.bxslider.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/notech.css" />
+    <link rel="stylesheet" href="assets/css/notech-responsive.css" />
+
+    <!-- modes css -->
+    <link rel="stylesheet" id="jssMode" href="assets/css/notech-light.css">
+
+    <!-- toolbar css -->
+    <link rel="stylesheet" href="assets/vendors/toolbar/css/toolbar.css">
+
+    <style>
+        .request-quote-form .form-group {
+            margin-bottom: 20px;
+        }
+        .request-quote-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #1a1a1a;
+        }
+        .request-quote-form label .required {
+            color: #e53e3e;
+        }
+        .request-quote-form .form-control {
+            width: 100%;
+            padding: 12px 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        .request-quote-form .form-control:focus {
+            outline: none;
+            border-color: #4a90e2;
+            box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+        }
+        .request-quote-form select.form-control {
+            height: 48px;
+        }
+        .main-menu__list .dropdown ul li a {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- style switcher -->
+    <div class="style-switcher">
+        <a href="#" id="switcher-toggler"><i class="fa fa-cog"></i></a>
+        <h3>Layout Options</h3>
+        <div class="layout-feature" id="colorMode">
+            <a href="" class="dark-switcher" data-theme="notech-dark">Dark</a>
+            <a href="" class="light-switcher" data-theme="notech-light">Light</a>
+            <button class="boxed-switcher">Boxed</button>
+        </div>
+    </div>
+    <!-- end style switcher -->
+
+    <div class="preloader">
+        <img class="preloader__image" width="60" src="assets/images/loader.png" alt="" />
+    </div>
+    <!-- /.preloader -->
+    <div class="page-wrapper">
+        <header class="main-header main-header--one clearfix">
+            <div class="main-header__top">
+                <div class="main-header__top-inner clearfix">
+                    <div class="main-header__top-left">
+                        <ul class="list-unstyled main-header__top-address">
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-pin"></span>
+                                </div>
+                                <div class="text">
+                                    <p>Krishna Complex , 4th Floor, Manji ka Hatta , Jodhpur , Rajasthan ,India</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-email"></span>
+                                </div>
+                                <div class="text">
+                                    <p><a href="mailto:needhelp@company.com">shinewellsofttech@gmail.com</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-header__top-right">
+                        <div class="main-header__top-right-content">
+                            <div class="main-header__top-right-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-menu clearfix">
+                <div class="main-menu__wrapper clearfix">
+                    <div class="main-menu__left main-menu__left--two">
+                        <div class="main-menu__logo">
+                            <a href="index.html">
+                                <img class="logo-dark" src="assets/images/main-images/logo (1).png" alt="" width="150" height="50" style="object-fit: contain;">
+                                <img class="logo-light" src="assets/images/main-images/logo (1).png" alt="" width="150" height="50" style="object-fit: contain;">
+                            </a>
+                        </div>
+                        <div class="main-menu__main-menu-box main-menu__main-menu-box--two">
+                            <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                            <ul class="main-menu__list">
+                                <li class="megamenu">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="services.html">Services</a>
+                                    <ul>
+                                        <li><a href="Custom-Software-Service.html">Custom Software</a></li>
+                                        <li><a href="Mobile-Web-App-Development.html">Mobile & Web Apps</a></li>
+                                        <li><a href="Website-Development.html">Website Development</a></li>
+                                        <li><a href="Graphic-Design.html">Graphic Design</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">Projects</a>
+                                    <ul>
+                                        <li><a href="CGBox-project.html">CG Box Software</a></li>
+                                        <li><a href="Sahakaar.html">Sahakaar</a></li>
+                                        <li><a href="Vartika-project.html">Vartika - Payroll Management Software</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-menu__right">
+                        <div class="main-menu__search-call">
+                            <div class="main-menu__call">
+                                <div class="main-menu__call-icon">
+                                    <img src="assets/images/icon/main-menu-icon-comment.png" alt="">
+                                </div>
+                                <div class="main-menu__call-number">
+                                    <p>Have any question?</p>
+                                    <h5><a href="tel:9828035585"><span>Free</span> +91 9828035585</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="stricky-header stricked-menu main-menu">
+            <div class="sticky-header__content"></div>
+        </div>
+
+        <!--Page Header Start-->
+        <section class="page-header">
+            <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg)">
+            </div>
+            <div class="container">
+                <div class="page-header__inner">
+                    <ul class="thm-breadcrumb list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><span>/</span></li>
+                        <li class="active">Request Quote</li>
+                    </ul>
+                    <h2>Request Quote</h2>
+                </div>
+            </div>
+        </section>
+        <!--Page Header End-->
+
+        <!--Request Quote Form Start-->
+        <section class="contact-page" style="padding: 100px 0;">
+            <div class="container">
+                <div class="section-title text-center">
+                    <div class="section-title__tagline-box">
+                        <span class="section-title__tagline">Get in touch</span>
+                        <div class="section-title-shape">
+                            <img src="assets/images/shapes/section-title-shape.png" alt="">
+                        </div>
+                    </div>
+                    <h2 class="section-title__title">Request a Quote</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="contact-page__form">
+                            <form id="requestQuoteForm" class="comment-one__form contact-form-validated request-quote-form" novalidate="novalidate">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="comment-form__input-box form-group">
+                                            <label for="organization_name">Organization Name <span class="required">*</span></label>
+                                            <input type="text" id="organization_name" name="organization_name" class="form-control" placeholder="Enter organization name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="comment-form__input-box form-group">
+                                            <label for="organization_title">Organization Title</label>
+                                            <input type="text" id="organization_title" name="organization_title" class="form-control" placeholder="Enter organization title">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="comment-form__input-box form-group">
+                                            <label for="contact_person">Contact Person Name</label>
+                                            <input type="text" id="contact_person" name="contact_person" class="form-control" placeholder="Enter contact person name">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="comment-form__input-box form-group">
+                                            <label for="email">Email <span class="required">*</span></label>
+                                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter email address" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="comment-form__input-box form-group">
+                                            <label for="contact_no">Contact No. <span class="required">*</span></label>
+                                            <input type="tel" id="contact_no" name="contact_no" class="form-control" placeholder="Enter contact number" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="comment-form__input-box form-group">
+                                            <label for="fax_no">Fax No.</label>
+                                            <input type="text" id="fax_no" name="fax_no" class="form-control" placeholder="Enter fax number">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="comment-form__input-box form-group">
+                                            <label for="address">Address</label>
+                                            <textarea id="address" name="address" class="form-control" rows="2" placeholder="Enter address" style="min-height: 48px; height: 48px;"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4">
+                                        <div class="comment-form__input-box form-group">
+                                            <label for="state">State</label>
+                                            <input type="text" id="state" name="state" class="form-control" placeholder="Enter state">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4">
+                                        <div class="comment-form__input-box form-group">
+                                            <label for="country">Country</label>
+                                            <input type="text" id="country" name="country" class="form-control" placeholder="Enter country">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4">
+                                        <div class="comment-form__input-box form-group">
+                                            <label for="postal_code">Postal Code</label>
+                                            <input type="text" id="postal_code" name="postal_code" class="form-control" placeholder="Enter postal code">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="comment-form__input-box form-group">
+                                            <label for="products">Products</label>
+                                            <select id="products" name="products" class="form-control">
+                                                <option value="">Select Product</option>
+                                                <option value="CG Box Software">CG Box Software</option>
+                                                <option value="Sahakaar">Sahakaar</option>
+                                                <option value="Vartika">Vartika - Payroll Management</option>
+                                                <option value="Custom Software">Custom Software</option>
+                                                <option value="Mobile App">Mobile App</option>
+                                                <option value="Web App">Web App</option>
+                                                <option value="Website Development">Website Development</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="comment-form__input-box form-group">
+                                            <label for="services">Considering Services</label>
+                                            <select id="services" name="services" class="form-control">
+                                                <option value="">Select Service</option>
+                                                <option value="Custom Software Development">Custom Software Development</option>
+                                                <option value="Mobile & Web App Development">Mobile & Web App Development</option>
+                                                <option value="Website Development with SEO">Website Development with SEO</option>
+                                                <option value="Graphic Design & Branding">Graphic Design & Branding</option>
+                                                <option value="Fintech & Payment Solutions">Fintech & Payment Solutions</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="comment-form__input-box form-group">
+                                            <label for="other">Other <span class="required">*</span></label>
+                                            <textarea id="other" name="other" class="form-control" rows="3" placeholder="Please provide additional details if needed" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="comment-form__input-box form-group">
+                                            <label style="margin-bottom: 15px;">Fill 3 websites URL that you like in terms of design/functionality (if possible)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4">
+                                        <div class="comment-form__input-box form-group">
+                                            <label for="reference_1">Reference 1</label>
+                                            <input type="url" id="reference_1" name="reference_1" class="form-control" placeholder="https://example.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4">
+                                        <div class="comment-form__input-box form-group">
+                                            <label for="reference_2">Reference 2</label>
+                                            <input type="url" id="reference_2" name="reference_2" class="form-control" placeholder="https://example.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4">
+                                        <div class="comment-form__input-box form-group">
+                                             <label for="reference_3">Reference 3</label>
+                                            <input type="url" id="reference_3" name="reference_3" class="form-control" placeholder="https://example.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="comment-form__input-box">
+                                            <button type="submit" class="thm-btn comment-form__btn">Submit Request</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Request Quote Form End-->
+
+        <!--Site Footer Start-->
+        <footer class="site-footer">
+            <div class="site-footer-bg-1 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms"
+                style="background-image: url(assets/images/shapes/site-footer-shape-1.png);">
+            </div>
+            <div class="site-footer-bg-2 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms"
+                style="background-image: url(assets/images/shapes/site-footer-shape-2.png);">
+            </div>
+            <div class="site-footer__top">
+                <div class="container">
+                    <div class="site-footer__top-inner">
+                        <div class="site-footer__top-left">
+                            <div class="site-footer__top-icon">
+                                <span class="icon-artificial-intelligence"></span>
+                            </div>
+                            <h3 class="site-footer__top-title">Helping you overcome your technology challenges</h3>
+                        </div>
+                        <div class="site-footer__top-right">
+                            <a href="about.html" class="thm-btn site-footer__btn">Discover more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="footer-widget__column footer-widget__about">
+                                <div class="footer-widget__logo">
+                                    <a href="index.html"><img src="assets/images/main-images/logo (1).png" alt="" width="150" height="50" style="object-fit: contain;"></a>
+                                </div>
+                                <div class="footer-widget__about-text-box">
+                                    <p class="footer-widget__about-text">Subsrcibe for our upcoming latest articles and
+                                        news resources</p>
+                                </div>
+                                <form class="footer-widget__newsletter-form">
+                                    <div class="footer-widget__newsletter-input-box">
+                                        <input type="email" placeholder="Email address" name="email">
+                                        <button type="submit" class="footer-widget__newsletter-btn"><img
+                                                src="assets/images/icon/footer-widget-newsletter-send-icon.png"
+                                                alt=""></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div class="footer-widget__column footer-widget__links clearfix">
+                                <h3 class="footer-widget__title">Links</h3>
+                                <ul class="footer-widget__links-list list-unstyled clearfix">
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="team.html">Meet our team</a></li>
+                                    <li><a href="blog.html">News & media</a></li>
+                                    <li><a href="projects-page-1.html">Our projects</a></li>
+                                    <li><a href="contact.html">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                            <div class="footer-widget__column footer-widget__contact clearfix">
+                                <h3 class="footer-widget__title">Contact</h3>
+                                <ul class="footer-widget__contact-list list-unstyled clearfix">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-telephone"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p><a href="tel:9828035585">+91 9828035585</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-email"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p><a href="mailto:shinewellsofttech@gmail.com">shinewellsofttech@gmail.com</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-pin"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Krishna Complex , 4th Floor, Manji ka Hatta , Jodhpur , Rajasthan ,India</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                            <div class="footer-widget__column footer-widget__social-box clearfix">
+                                <div class="site-footer__social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="site-footer__bottom-inner">
+                                <p class="site-footer__bottom-text">© All Copyright 2022 by <a
+                                        href="#">Layerdrops.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Site Footer End-->
+
+
+    </div><!-- /.page-wrapper -->
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="assets/images/main-images/logo (1).png"
+                        width="150" height="50" alt="" style="object-fit: contain;" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:shinewellsofttech@gmail.com">shinewellsofttech@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:9828035585">+91 9828035585</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__top">
+                <div class="mobile-nav__social">
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-square"></a>
+                    <a href="#" class="fab fa-pinterest-p"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div><!-- /.mobile-nav__social -->
+            </div><!-- /.mobile-nav__top -->
+
+
+
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="icon-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendors/odometer/odometer.min.js"></script>
+    <script src="assets/vendors/swiper/swiper.min.js"></script>
+    <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
+    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/vendors/isotope/isotope.js"></script>
+    <script src="assets/vendors/countdown/countdown.min.js"></script>
+    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendors/bxslider/jquery.bxslider.min.js"></script>
+    <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="assets/vendors/vegas/vegas.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/vendors/timepicker/timePicker.js"></script>
+
+
+
+
+    <!-- template js -->
+    <script src="assets/js/notech.js"></script>
+
+
+    <!-- toolbar js -->
+    <script src="assets/vendors/toolbar/js/js.cookie.min.js"></script>
+    <script src="assets/vendors/toolbar/js/jQuery.style.switcher.min.js"></script>
+    <script src="assets/vendors/toolbar/js/toolbar.js"></script>
+
+    <!-- Request Quote Form WhatsApp Submission -->
+    <script>
+        document.getElementById('requestQuoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                organization_name: document.getElementById('organization_name').value,
+                organization_title: document.getElementById('organization_title').value,
+                contact_person: document.getElementById('contact_person').value,
+                email: document.getElementById('email').value,
+                contact_no: document.getElementById('contact_no').value,
+                fax_no: document.getElementById('fax_no').value,
+                address: document.getElementById('address').value,
+                state: document.getElementById('state').value,
+                country: document.getElementById('country').value,
+                postal_code: document.getElementById('postal_code').value,
+                products: document.getElementById('products').value,
+                services: document.getElementById('services').value,
+                other: document.getElementById('other').value,
+                reference_1: document.getElementById('reference_1').value,
+                reference_2: document.getElementById('reference_2').value,
+                reference_3: document.getElementById('reference_3').value
+            };
+
+            // Validate required fields
+            if (!formData.organization_name || !formData.email || !formData.contact_no || !formData.other) {
+                alert('Please fill in all required fields (Organization Name, Email, Contact No., and Other)');
+                return;
+            }
+
+            // Format message for WhatsApp
+            let message = '*Request Quote Form Website*\n\n';
+            message += '*Organization Details:*\n';
+            message += 'Organization Name: ' + formData.organization_name + '\n';
+            if (formData.organization_title) {
+                message += 'Organization Title: ' + formData.organization_title + '\n';
+            }
+            if (formData.contact_person) {
+                message += 'Contact Person: ' + formData.contact_person + '\n';
+            }
+            message += 'Email: ' + formData.email + '\n';
+            message += 'Contact No: ' + formData.contact_no + '\n';
+            if (formData.fax_no) {
+                message += 'Fax No: ' + formData.fax_no + '\n';
+            }
+            
+            message += '\n*Address Details:*\n';
+            if (formData.address) {
+                message += 'Address: ' + formData.address + '\n';
+            }
+            if (formData.state) {
+                message += 'State: ' + formData.state + '\n';
+            }
+            if (formData.country) {
+                message += 'Country: ' + formData.country + '\n';
+            }
+            if (formData.postal_code) {
+                message += 'Postal Code: ' + formData.postal_code + '\n';
+            }
+            
+            message += '\n*Product & Services:*\n';
+            if (formData.products) {
+                message += 'Products: ' + formData.products + '\n';
+            }
+            if (formData.services) {
+                message += 'Considering Services: ' + formData.services + '\n';
+            }
+            message += 'Other Details: ' + formData.other + '\n';
+            
+            message += '\n*Website References:*\n';
+            if (formData.reference_1) {
+                message += 'Reference 1: ' + formData.reference_1 + '\n';
+            }
+            if (formData.reference_2) {
+                message += 'Reference 2: ' + formData.reference_2 + '\n';
+            }
+            if (formData.reference_3) {
+                message += 'Reference 3: ' + formData.reference_3 + '\n';
+            }
+
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(message);
+            const phoneNumber = '9828035585';
+            
+            // Create WhatsApp URL
+            const whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + encodedMessage;
+            
+            // Open WhatsApp in new tab
+            window.open(whatsappURL, '_blank');
+            
+            // Optional: Show success message and reset form
+            alert('Redirecting to WhatsApp... Please send the message.');
+            // Uncomment the line below if you want to reset the form after submission
+            // this.reset();
+        });
+    </script>
+
+</body>
+
+</html>
