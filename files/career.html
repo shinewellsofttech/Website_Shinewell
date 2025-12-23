@@ -4,23 +4,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> About || Notech || Notech HTML Template For It Solution </title>
+    <title> Career || Shinewell Softtech || Join Our Team </title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
-    <meta name="description" content="Notech HTML Template For It Solution" />
+    <meta name="description" content="Join Shinewell Softtech - Career Opportunities" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
@@ -51,17 +46,241 @@
     <!-- modes css -->
     <link rel="stylesheet" id="jssMode" href="assets/css/notech-light.css">
 
-
     <!-- toolbar css -->
     <link rel="stylesheet" href="assets/vendors/toolbar/css/toolbar.css">
-    
+
     <style>
-        .notech-more__left {
-            margin-right: 30px !important;
+        .career-page {
+            padding: 100px 0;
         }
-        @media (max-width: 1199px) {
-            .notech-more__left {
-                margin-right: 20px !important;
+        .open-positions-section {
+            padding: 120px 0 100px;
+        }
+        .position-item {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 0;
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        }
+        .position-item:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+        .position-header {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+        .position-header:hover {
+            background: #f8f9fa;
+        }
+        .position-header.active {
+            background: var(--notech-base);
+            color: #fff;
+            border-bottom-color: var(--notech-base);
+        }
+        .position-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0;
+            color: #1a1a1a;
+            transition: color 0.3s ease;
+        }
+        .position-header.active .position-title {
+            color: #fff;
+        }
+        .position-icon {
+            font-size: 18px;
+            transition: transform 0.3s ease;
+            color: var(--notech-base);
+        }
+        .position-header.active .position-icon {
+            transform: rotate(180deg);
+            color: #fff;
+        }
+        .position-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        .position-details.active {
+            max-height: 2000px;
+        }
+        .position-content {
+            padding: 30px;
+            background: #fff;
+        }
+        .job-section {
+            margin-bottom: 30px;
+        }
+        .job-section:last-child {
+            margin-bottom: 0;
+        }
+        .job-section h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .job-section ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .job-section ul li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+            color: #555;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        .job-section ul li:before {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--notech-base);
+            font-size: 14px;
+        }
+        .application-form-section {
+            padding: 20px 0;
+            background: #f8f9fa;
+        }
+        .application-form-section .section-title {
+            margin-bottom: 15px;
+        }
+        .application-form-section .section-title__title {
+            font-size: 32px;
+            margin-bottom: 0;
+        }
+        .application-form-section .container-fluid {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .form-image-wrapper {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .form-image {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            max-height: 450px;
+            object-fit: cover;
+            display: block;
+        }
+        .form-content-wrapper {
+            padding: 20px 35px;
+            background: #fff;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .career-form {
+            background: #fff;
+        }
+        .career-form .comment-form__input-box {
+            position: relative;
+            display: block;
+            margin-bottom: 15px;
+        }
+        .career-form .comment-form__input-box input[type="text"],
+        .career-form .comment-form__input-box input[type="email"],
+        .career-form .comment-form__input-box input[type="tel"],
+        .career-form .comment-form__input-box input[type="url"],
+        .career-form .comment-form__input-box input[type="file"],
+        .career-form .comment-form__input-box select,
+        .career-form .comment-form__input-box textarea {
+            width: 100%;
+            background-color: #f4f4f4;
+            border: 1px solid #f4f4f4;
+            padding: 12px 25px;
+            font-size: 14px;
+            color: #1a1a1a;
+            border-radius: 0;
+            transition: all 0.3s ease;
+            font-family: var(--notech-font);
+        }
+        .career-form .comment-form__input-box input:focus,
+        .career-form .comment-form__input-box select:focus,
+        .career-form .comment-form__input-box textarea:focus {
+            background-color: #fff;
+            border-color: var(--notech-base);
+            outline: none;
+        }
+        .career-form .comment-form__input-box textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+        .career-form .comment-form__input-box select {
+            height: 50px;
+            cursor: pointer;
+        }
+        .career-form .comment-form__input-box input[type="file"] {
+            padding: 10px 25px;
+            cursor: pointer;
+        }
+        .career-form .comment-form__btn-box {
+            margin-top: 5px;
+        }
+        .career-form .form-text {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .main-menu__list .dropdown ul li a {
+            white-space: nowrap;
+        }
+        @media (max-width: 991px) {
+            .open-positions-section {
+                padding: 80px 0 60px;
+            }
+            .application-form-section {
+                padding: 15px 0;
+            }
+            .application-form-section .section-title {
+                margin-bottom: 10px;
+            }
+            .form-content-wrapper {
+                padding: 20px 20px;
+            }
+            .form-image {
+                min-height: 300px;
+                max-height: 350px;
+            }
+            .position-header {
+                padding: 20px 25px;
+            }
+            .position-content {
+                padding: 25px;
+            }
+            .position-title {
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 767px) {
+            .form-content-wrapper {
+                padding: 30px 20px;
+            }
+            .position-header {
+                padding: 18px 20px;
+            }
+            .position-title {
+                font-size: 18px;
+            }
+            .job-section h3 {
+                font-size: 18px;
             }
         }
     </style>
@@ -76,8 +295,8 @@
         <div class="layout-feature" id="colorMode">
             <a href="" class="dark-switcher" data-theme="notech-dark">Dark</a>
             <a href="" class="light-switcher" data-theme="notech-light">Light</a>
-            <button class="boxed-switcher">Boxed</button><!-- /.ltr-switcher -->
-        </div><!-- /.language-feature -->
+            <button class="boxed-switcher">Boxed</button>
+        </div>
     </div>
     <!-- end style switcher -->
 
@@ -104,7 +323,7 @@
                                     <span class="icon-email"></span>
                                 </div>
                                 <div class="text">
-                                    <p><a href="mailto:needhelp@company.com">shinewellsofttech@gmail.com</a></p>
+                                    <p><a href="mailto:shinewellsofttech@gmail.com">shinewellsofttech@gmail.com</a></p>
                                 </div>
                             </li>
                         </ul>
@@ -128,7 +347,6 @@
             </div>
             <nav class="main-menu clearfix">
                 <div class="main-menu__wrapper clearfix">
-
                     <div class="main-menu__left main-menu__left--two">
                         <div class="main-menu__logo">
                             <a href="index.html">
@@ -143,7 +361,7 @@
                                     <a href="index.html">Home</a>
 
                                 </li>
-                                <li class="dropdown current">
+                                <li class="dropdown">
                                     <a href="about.html">About Us</a>
 
                                 </li>
@@ -185,12 +403,11 @@
                                     </ul>
                                 </li> -->
                                 <li><a href="requestQuote.html">Request Quote</a></li>
-                                <li><a href="career.html">Career</a></li>
+                                <li class="current"><a href="career.html">Career</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
                     </div>
-
                     <div class="main-menu__right">
                         <div class="main-menu__search-call">
                             <div class="main-menu__call">
@@ -202,255 +419,213 @@
                                     <h5><a href="tel:9828035585"><span></span> +91 9828035585</a></h5>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
                 </div>
             </nav>
         </header>
 
         <div class="stricky-header stricked-menu main-menu">
-            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
-        </div><!-- /.stricky-header -->
+            <div class="sticky-header__content"></div>
+        </div>
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(assets/images/main-images/about-hero.jpg)">
+            <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg)">
             </div>
             <div class="container">
                 <div class="page-header__inner">
                     <ul class="thm-breadcrumb list-unstyled">
                         <li><a href="index.html">Home</a></li>
                         <li><span>/</span></li>
-                        <li class="active">About us</li>
+                        <li class="active">Career</li>
                     </ul>
-                    <h2>About us</h2>
+                    <h2>Join Our Team</h2>
                 </div>
             </div>
         </section>
         <!--Page Header End-->
-
-          <!--Notech More Start-->
-          <section class="notech-more">
-             <div class="container-fluid" style="padding-left: 0;">
-                 <div class="row" style="margin-left: 0; margin-right: 0;">
-                     <div class="col-xl-7" style="padding-left: 0; padding-right: 0;">
-                         <div class="notech-more__left" style="margin-right: 0; padding-right: 40px; padding-left: 50px;">
-                            <div class="section-title text-left">
-                                <div class="section-title__tagline-box">
-                                    <span class="section-title__tagline">KNOW US</span>
-                                    <div class="section-title-shape">
-                                        <img src="assets/images/shapes/section-title-shape.png" alt="">
-                                    </div>
-                                </div>
-                                <!-- <h2 class="section-title__title">Notech is more than tech company</h2> -->
+  <!--Notech More Start-->
+  <section class="notech-more">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="notech-more__left">
+                    <div class="section-title text-left">
+                        <div class="section-title__tagline-box">
+                            <span class="section-title__tagline">Join Our Team</span>
+                            <div class="section-title-shape">
+                                <img src="assets/images/shapes/section-title-shape.png" alt="">
                             </div>
-                            <p class="notech-more__text" style="padding-bottom: 8px; margin-bottom: 0;">Shinewell Softtech is located in Jodhpur, Rajasthan, India, offering fully fledged services for software development. Recognized both on local and regional markets since 1995. Shinewell differentiation point comes with three simple principles:</p>
-                            <ul class="list-unstyled notech-more__principles" style="padding-left: 0;">
-                                <li style="margin-bottom: 1px; position: relative; padding-left: 30px; line-height: 1.6;">
-                                    <span style="position: absolute; left: 0; color: var(--notech-base); font-size: 16px;"><i class="fas fa-check"></i></span>
-                                    True collaboration with customers and partners
-                                </li>
-                                <li style="margin-bottom: 1px; position: relative; padding-left: 30px; line-height: 1.6;">
-                                    <span style="position: absolute; left: 0; color: var(--notech-base); font-size: 16px;"><i class="fas fa-check"></i></span>
-                                    Complete understanding of customers business
-                                </li>
-                                <li style="margin-bottom: 8px; position: relative; padding-left: 30px; line-height: 1.6;">
-                                    <span style="position: absolute; left: 0; color: var(--notech-base); font-size: 16px;"><i class="fas fa-check"></i></span>
-                                    Persistence in finishing the job whatever it takes
-                                </li>
-                            </ul>
-                            <p class="notech-more__text">We have special expertise in custom software development – providing specialized products, IT services and custom end to end solutions to our enterprise customers. We gain competitive advantage from these distinctive capabilities and have developed the ability to implement and manage complex IT systems in changing times with greater effectiveness than many competitors. In the last 28 years, Shinewell Softtech has a large customer base of more than 500 customers all over India, offering considerably lower priced services than Indian Industry norm.</p>
-                            <!-- <ul class="list-unstyled notech-more__points">
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-technology"></span>
-                                    </div>
-                                    <h3 class="notech-more__title">Data innovations</h3>
-                                    <p class="notech-more__text-2">Nullam mollis elit quis dus is lacinia not efficitur.
-                                    </p>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-stock-market"></span>
-                                    </div>
-                                    <h3 class="notech-more__title">Business solutions</h3>
-                                    <p class="notech-more__text-2">Nullam mollis elit quis dus is lacinia not efficitur.
-                                    </p>
-                                </li>
-                            </ul> -->
                         </div>
+                        <h2 class="section-title__title">Join Our Dynamic Team</h2>
                     </div>
-                    <div class="col-xl-5" style="padding-left: 0; padding-right: 60px;">
-                        <div class="notech-more__right">
-                            <div class="notech-more__img wow slideInRight" data-wow-delay="100ms"
-                                data-wow-duration="2500ms">
-                                <img src="assets/images/resources/notech-more-img-1.jpg" alt="">
+                    <p class="notech-more__text">At Shinewell Softtech, we believe in fostering a collaborative environment where innovation meets excellence. Join us to work on cutting-edge projects and grow your career with a team that values your contributions.</p>
+                    <ul class="list-unstyled notech-more__points">
+                        <li>
+                            <div class="icon">
+                                <span class="icon-technology"></span>
                             </div>
-                        </div>
+                            <h3 class="notech-more__title">Growth Opportunities</h3>
+                            <p class="notech-more__text-2">Continuous learning and career development programs for professional growth.
+                            </p>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-stock-market"></span>
+                            </div>
+                            <h3 class="notech-more__title">Collaborative Culture</h3>
+                            <p class="notech-more__text-2">Work with talented professionals in a supportive and creative environment.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="notech-more__right">
+                    <div class="notech-more__img wow slideInRight" data-wow-delay="100ms"
+                        data-wow-duration="2500ms">
+                        <img src="assets/images/resources/notech-more-img-1.jpg" alt="">
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Notech More End-->
+        </div>
+    </div>
+</section>
+<!--Notech More End-->
 
-         <!--Business From Start-->
-         <section class="business-from">
-            <div class="business-from-bg-box">
-                <div class="business-from-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
-                    style="background-image: url(assets/images/backgrounds/business-from-bg.jpg);"></div>
-            </div>
-            <div class="container">
-                <div class="business-from__inner text-center">
-                    <p class="business-from__sub-title">Re-Innovate your business with</p>
-                    <h2 class="business-from__title" style="font-size: 4.5rem;">Shinewell Softtech</h2>
-                    <div class="business-from__btn-box">
-                        <a href="requestQuote.html" class="business-from__btn thm-btn">Request Quote</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Business From End-->
-
-        <!--Delivering IT Start-->
-        <section class="delivering-it delivering-it-two">
+        <!--Open Positions Section Start-->
+        <section class="open-positions-section">
             <div class="container">
                 <div class="section-title text-center">
                     <div class="section-title__tagline-box">
-                        <span class="section-title__tagline">Our Mission</span>
+                        <span class="section-title__tagline">Join our team</span>
                         <div class="section-title-shape">
                             <img src="assets/images/shapes/section-title-shape.png" alt="">
                         </div>
                     </div>
-                    <h2 class="section-title__title">Missions</h2>
+                    <h2 class="section-title__title">Open Positions</h2>
                 </div>
-                <div class="delivering-it__bottom">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                            <!--Delivering IT Single-->
-                            <div class="delivering-it__single">
-                                <div class="delivering-it__img">
-                                    <img src="assets/images/resources/delivering-it-img-1.jpg" alt="">
-                                </div>
-                                <div class="delivering-it__content">
-                                    <h5 class="delivering-it__content-title">Deliver high-quality, value-driven software
-                                    </h5>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-xl-12">
+                        <!-- Position Item 1 -->
+                        <div class="position-item">
+                            <div class="position-header" onclick="togglePosition(this)">
+                                <h3 class="position-title">Software Support Executive</h3>
+                                <i class="fas fa-chevron-down position-icon"></i>
+                            </div>
+                            <div class="position-details">
+                                <div class="position-content">
+                                    <div class="job-section">
+                                        <h3>Job Responsibilities:</h3>
+                                        <ul>
+                                            <li>Handle client queries through calls, emails, or messages and provide timely software support.</li>
+                                            <li>Test client projects and applications to identify issues and ensure proper functionality before and after delivery.</li>
+                                            <li>Provide product training to clients for completed software, portals, or mobile applications.</li>
+                                            <li>Conduct product demos for new and existing clients, explaining features and workflows clearly.</li>
+                                            <li>Coordinate client issues and requirements with the development team and follow up until resolution.</li>
+                                            <li>Maintain proper documentation of client issues, feedback, and support activities.</li>
+                                            <li>Ensure client satisfaction by providing clear communication and reliable support.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="job-section">
+                                        <h3>Required Skills:</h3>
+                                        <ul>
+                                            <li>Good communication and interpersonal skills.</li>
+                                            <li>Basic understanding of software, web applications, or mobile applications.</li>
+                                            <li>Ability to understand client requirements and explain technical features in simple terms.</li>
+                                            <li>Strong coordination and follow-up skills.</li>
+                                            <li>Willingness to learn new technologies and products.</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
-                            <!--Delivering IT Single-->
-                            <div class="delivering-it__single">
-                                <div class="delivering-it__img">
-                                    <img src="assets/images/resources/delivering-it-img-2.jpg" alt="">
-                                </div>
-                                <div class="delivering-it__content">
-                                    <h5 class="delivering-it__content-title">Secure, connected, and scalable solutions</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-                            <!--Delivering IT Single-->
-                            <div class="delivering-it__single">
-                                <div class="delivering-it__img">
-                                    <img src="assets/images/resources/delivering-it-img-3.jpg" alt="">
-                                </div>
-                                <div class="delivering-it__content">
-                                    <h5 class="delivering-it__content-title">Empower customers and employees growth.</h5>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Position Item 2 - Example (You can add more positions) -->
                     </div>
                 </div>
             </div>
         </section>
-        <!--Delivering IT End-->
+        <!--Open Positions Section End-->
 
-    
-        <!--Team One Start-->
-        <!-- <section class="team-one about-page-team">
-            <div class="container">
+        <!--Application Form Section Start-->
+        <section class="application-form-section">
+            <div class="container-fluid">
                 <div class="section-title text-center">
                     <div class="section-title__tagline-box">
-                        <span class="section-title__tagline">Meet the team</span>
+                        <span class="section-title__tagline">Apply now</span>
                         <div class="section-title-shape">
                             <img src="assets/images/shapes/section-title-shape.png" alt="">
                         </div>
                     </div>
-                    <h2 class="section-title__title">Team members</h2>
+                    <h2 class="section-title__title">Submit Your Application</h2>
                 </div>
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="team-one__single">
-                            <div class="team-one__img">
-                                <img src="assets/images/team/team-1-1.jpg" alt="">
-                                <ul class="list-unstyled team-one__social">
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-one__content-box">
-                                <div class="team-one__content">
-                                    <div class="team-one-shape">
-                                        <img src="assets/images/shapes/team-one-shape.png" alt="">
-                                    </div>
-                                    <h4 class="team-one__name"><a href="team-details.html">Kevin martin</a></h4>
-                                    <p class="team-one__title">Accountant</p>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Left Side - Full Image without left margin/padding -->
+                    <div class="col-xl-6 col-lg-6 form-image-wrapper">
+                        <img src="assets/images/main-images/470x468.jpg" alt="Career at Shinewell Softtech" class="form-image">
                     </div>
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
-                        <div class="team-one__single">
-                            <div class="team-one__img">
-                                <img src="assets/images/team/team-1-2.jpg" alt="">
-                                <ul class="list-unstyled team-one__social">
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-one__content-box">
-                                <div class="team-one__content">
-                                    <div class="team-one-shape">
-                                        <img src="assets/images/shapes/team-one-shape.png" alt="">
+
+                    <!-- Right Side - Application Form -->
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="form-content-wrapper">
+                            <div class="career-form">
+                                <form id="careerForm" class="comment-one__form contact-form-validated" novalidate="novalidate">
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="comment-form__input-box">
+                                                <select id="position_applying" name="position_applying" required>
+                                                    <option value="">Select a position</option>
+                                                    <option value="Software Support Executive">Software Support Executive</option>
+                                                    <option value="Senior Software Developer">Software Developer</option>
+                                                    <!-- <option value="UI/UX Designer">UI/UX Designer</option> -->
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" id="applicant_name" name="applicant_name" placeholder="Your name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="email" id="applicant_email" name="applicant_email" placeholder="Email address" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="tel" id="applicant_phone" name="applicant_phone" placeholder="Phone number" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" id="applicant_experience" name="applicant_experience" placeholder="Years of experience (e.g., 2 years)">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="comment-form__input-box">
+                                                <input type="url" id="applicant_linkedin" name="applicant_linkedin" placeholder="LinkedIn Profile (Optional)">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h4 class="team-one__name"><a href="team-details.html">Jessica brown</a></h4>
-                                    <p class="team-one__title">Co founder & CEO</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="team-one__single">
-                            <div class="team-one__img">
-                                <img src="assets/images/team/team-1-3.jpg" alt="">
-                                <ul class="list-unstyled team-one__social">
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-one__content-box">
-                                <div class="team-one__content">
-                                    <div class="team-one-shape">
-                                        <img src="assets/images/shapes/team-one-shape.png" alt="">
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="comment-form__input-box text-message-box">
+                                                <textarea id="applicant_cover_letter" name="applicant_cover_letter" placeholder="Cover letter - Tell us why you're interested in this position"></textarea>
+                                            </div>
+                                            <div class="comment-form__btn-box">
+                                                <button type="submit" class="thm-btn comment-form__btn">Submit Application</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h4 class="team-one__name"><a href="team-details.html">David cooper</a></h4>
-                                    <p class="team-one__title">Senior assistant</p>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
-        <!--Team One End-->
+        </section>
+        <!--Application Form Section End-->
 
         <!--Site Footer Start-->
         <footer class="site-footer">
@@ -481,7 +656,7 @@
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__column footer-widget__about">
                                 <div class="footer-widget__logo">
-                                    <a href="index.html"><img src="assets/images/resources/footer-logo.png" alt=""></a>
+                                    <a href="index.html"><img src="assets/images/main-images/logo (1).png" alt="" width="150" height="50" style="object-fit: contain;"></a>
                                 </div>
                                 <div class="footer-widget__about-text-box">
                                     <p class="footer-widget__about-text">Subsrcibe for our upcoming latest articles and
@@ -502,7 +677,7 @@
                                 <h3 class="footer-widget__title">Links</h3>
                                 <ul class="footer-widget__links-list list-unstyled clearfix">
                                     <li><a href="about.html">About us</a></li>
-                                    <li><a href="team.html">Meet our team</a></li>
+                                    <li><a href="career.html">Career</a></li>
                                     <li><a href="blog.html">News & media</a></li>
                                     <li><a href="projects-page-1.html">Our projects</a></li>
                                     <li><a href="contact.html">Contacts</a></li>
@@ -518,7 +693,7 @@
                                             <span class="icon-telephone"></span>
                                         </div>
                                         <div class="text">
-                                            <p><a href="tel:980009850">+98 (000)-9850</a></p>
+                                            <p><a href="tel:9828035585">+91 9828035585</a></p>
                                         </div>
                                     </li>
                                     <li>
@@ -526,7 +701,7 @@
                                             <span class="icon-email"></span>
                                         </div>
                                         <div class="text">
-                                            <p><a href="mailto:needhelp@company.com">needhelp@company.com</a></p>
+                                            <p><a href="mailto:shinewellsofttech@gmail.com">shinewellsofttech@gmail.com</a></p>
                                         </div>
                                     </li>
                                     <li>
@@ -534,7 +709,7 @@
                                             <span class="icon-pin"></span>
                                         </div>
                                         <div class="text">
-                                            <p>66 broklyn golden street line <br> new york</p>
+                                            <p>Krishna Complex , 4th Floor, Manji ka Hatta , Jodhpur , Rajasthan ,India</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -569,9 +744,7 @@
         </footer>
         <!--Site Footer End-->
 
-
     </div><!-- /.page-wrapper -->
-
 
     <div class="mobile-nav__wrapper">
         <div class="mobile-nav__overlay mobile-nav__toggler"></div>
@@ -580,8 +753,8 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/footer-logo.png"
-                        width="155" alt="" /></a>
+                <a href="index.html" aria-label="logo image"><img src="assets/images/main-images/logo (1).png"
+                        width="150" height="50" alt="" style="object-fit: contain;" /></a>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
@@ -590,11 +763,11 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@packageName__.com">needhelp@notech.com</a>
+                    <a href="mailto:shinewellsofttech@gmail.com">shinewellsofttech@gmail.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
-                    <a href="tel:666-888-0000">666 888 0000</a>
+                    <a href="tel:9828035585">+91 9828035585</a>
                 </li>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
@@ -605,9 +778,6 @@
                     <a href="#" class="fab fa-instagram"></a>
                 </div><!-- /.mobile-nav__social -->
             </div><!-- /.mobile-nav__top -->
-
-
-
         </div>
         <!-- /.mobile-nav__content -->
     </div>
@@ -630,7 +800,6 @@
     <!-- /.search-popup -->
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
-
 
     <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -655,9 +824,6 @@
     <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
     <script src="assets/vendors/timepicker/timePicker.js"></script>
 
-
-
-
     <!-- template js -->
     <script src="assets/js/notech.js"></script>
 
@@ -665,7 +831,85 @@
     <script src="assets/vendors/toolbar/js/js.cookie.min.js"></script>
     <script src="assets/vendors/toolbar/js/jQuery.style.switcher.min.js"></script>
     <script src="assets/vendors/toolbar/js/toolbar.js"></script>
+
+    <!-- Position Toggle Script -->
+    <script>
+        function togglePosition(element) {
+            const positionItem = element.closest('.position-item');
+            const positionDetails = positionItem.querySelector('.position-details');
+            const positionHeader = positionItem.querySelector('.position-header');
+            
+            // Close all other positions
+            document.querySelectorAll('.position-item').forEach(item => {
+                if (item !== positionItem) {
+                    item.querySelector('.position-details').classList.remove('active');
+                    item.querySelector('.position-header').classList.remove('active');
+                }
+            });
+            
+            // Toggle current position
+            positionDetails.classList.toggle('active');
+            positionHeader.classList.toggle('active');
+        }
+    </script>
+
+    <!-- Career Form Submission Script -->
+    <script>
+        document.getElementById('careerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                position_applying: document.getElementById('position_applying').value,
+                applicant_name: document.getElementById('applicant_name').value,
+                applicant_email: document.getElementById('applicant_email').value,
+                applicant_phone: document.getElementById('applicant_phone').value,
+                applicant_experience: document.getElementById('applicant_experience').value,
+                applicant_cover_letter: document.getElementById('applicant_cover_letter').value,
+                applicant_linkedin: document.getElementById('applicant_linkedin').value
+            };
+
+            // Validate required fields
+            if (!formData.position_applying || !formData.applicant_name || !formData.applicant_email || !formData.applicant_phone) {
+                alert('Please fill in all required fields (Position, Name, Email, and Phone Number)');
+                return;
+            }
+
+            // Format message for WhatsApp
+            let message = '*Career Application - ' + formData.position_applying + '*\n\n';
+            message += '*Applicant Details:*\n';
+            message += 'Position: ' + formData.position_applying + '\n';
+            message += 'Full Name: ' + formData.applicant_name + '\n';
+            message += 'Email: ' + formData.applicant_email + '\n';
+            message += 'Phone: ' + formData.applicant_phone + '\n';
+            if (formData.applicant_experience) {
+                message += 'Experience: ' + formData.applicant_experience + '\n';
+            }
+            if (formData.applicant_linkedin) {
+                message += 'LinkedIn: ' + formData.applicant_linkedin + '\n';
+            }
+            
+            if (formData.applicant_cover_letter) {
+                message += '\n*Cover Letter:*\n' + formData.applicant_cover_letter + '\n';
+            }
+
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(message);
+            const phoneNumber = '6376868929';
+            
+            // Create WhatsApp URL
+            const whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + encodedMessage;
+            
+            // Open WhatsApp in new tab
+            window.open(whatsappURL, '_blank');
+            
+            // Show success message
+            alert('Thank you for your interest! Redirecting to WhatsApp...');
+        });
+    </script>
+
 </body>
 
 </html>
-</html>
+
+

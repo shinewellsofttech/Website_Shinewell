@@ -107,6 +107,20 @@
         .main-menu__list .dropdown ul li a {
             white-space: nowrap;
         }
+        .footer-widget__links-list li a {
+            font-size: 12px;
+            line-height: 1.5;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .footer-widget__links-list li {
+            margin-bottom: 8px;
+        }
+        .footer-widget__column.footer-widget__links {
+            min-width: 200px;
+        }
     </style>
 
 </head>
@@ -196,11 +210,11 @@
                                 <li class="dropdown">
                                     <a href="services.html">Services</a>
                                     <ul>
-                                        <li><a href="Custom-Software-Service.html">Custom Software</a></li>
-                                        <li><a href="Mobile-Web-App-Development.html">Mobile & Web Apps</a></li>
-                                        <!-- <li><a href="Finetech-Solution.html">Fintech Solutions</a></li> -->
+                                        <li><a href="Custom-Software-Service.html">Customized Software Development</a></li>
+                                        <li><a href="Mobile-Web-App-Development.html">Mobile & Web Apps Development</a></li>
+                                        <li><a href="Finetech-Solution.html"> SEO Optimization</a></li>
                                         <li><a href="Website-Development.html">Website Development</a></li>
-                                        <li><a href="Graphic-Design.html">Graphic Design</a></li>
+                                        <li><a href="Graphic-Design.html">Graphic Design & Branding</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
@@ -231,6 +245,7 @@
                                     </ul>
                                 </li> -->
                                 <li><a href="requestQuote.html">Request Quote</a></li>
+                                <li><a href="career.html">Career</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
@@ -244,7 +259,7 @@
                                 </div>
                                 <div class="main-menu__call-number">
                                     <p>Have any question?</p>
-                                    <h5><a href="tel:9828035585"><span>Free</span> +91 9828035585</a></h5>
+                                    <h5><a href="tel:9828035585"><span></span> +91 9828035585</a></h5>
                                 </div>
                             </div>
 
@@ -411,7 +426,7 @@
             <div class="container">
                 <div class="get-solutions__inner">
                     <p class="get-solutions__text">Stop wasting time and money on technology. <a
-                            href="about.html">Explore
+                            href="projects.html">Explore
                             Shinewell Softtech</a> and get best solutions.</p>
                 </div>
             </div>
@@ -438,7 +453,7 @@
                                     </h3>
                                     <p class="feature-one__hover-text">We manage IT services to keep your systems running smoothly and efficiently.</p>
                                     <div class="feature-one__learn-more">
-                                        <a href="about.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a>
+                                        <!-- <a href="about.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -459,7 +474,7 @@
                                     <h3 class="feature-one__hover-title"><a href="about.html">Custom Software Development</a></h3>
                                     <p class="feature-one__hover-text">We develop custom software solutions tailored to your business needs, ensuring efficiency and scalability.</p>
                                     <div class="feature-one__learn-more">
-                                        <a href="about.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a>
+                                        <!-- <a href="about.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -481,7 +496,7 @@
                                     </h3>
                                     <p class="feature-one__hover-text">We provide digital solutions to enhance your online presence and improve user experience.</p>
                                     <div class="feature-one__learn-more">
-                                        <a href="about.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a>
+                                        <!-- <a href="about.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -618,7 +633,7 @@
                                 <div class="services-one__icon">
                                     <span class="icon-technology"></span>
                                 </div>
-                                <h3 class="services-one__title"><a href="digital-marketing.html">Fintech & Payment Solutions 
+                                <h3 class="services-one__title"><a href="digital-marketing.html">SEO <br>Optimization
                                         </a></h3>
                                 <!-- <p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p> -->
                             </div>
@@ -628,7 +643,7 @@
                                 <div class="services-one__icon">
                                     <span class="icon-content"></span>
                                 </div>
-                                <h3 class="services-one__title"><a href="content-management.html">Website Development With SEO</a></h3>
+                                <h3 class="services-one__title"><a href="content-management.html">Website <br> Development </a></h3>
                                 <!-- <p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p> -->
                             </div>
                         </li>
@@ -974,7 +989,7 @@
                     <div class="trusted-source__right">
                         <div class="trusted-source__contact-info">
                             <p>Have any question?</p>
-                            <a href="tel:982803558"><span>Free</span> +91 9828035585</a>
+                            <a href="tel:982803558"><span></span> +91 9828035585</a>
                         </div>
                     </div>
                 </div>
@@ -1056,47 +1071,68 @@
             <div class="site-footer__middle">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__column footer-widget__about">
                                 <div class="footer-widget__logo">
                                     <a href="index.html"><img src="assets/images/main-images/logo (1).png" alt="" width="150" height="50" style="object-fit: contain;"></a>
                                 </div>
                                 <div class="footer-widget__about-text-box">
-                                    <p class="footer-widget__about-text">Subsrcibe for our upcoming latest articles and
-                                        news resources</p>
+                                    <p class="footer-widget__about-text">Shinewell Softtech - Your trusted partner for innovative software solutions, web development, and digital transformation services. Empowering businesses with cutting-edge technology since 1995.</p>
                                 </div>
-                                <form class="footer-widget__newsletter-form">
-                                    <div class="footer-widget__newsletter-input-box">
-                                        <input type="email" placeholder="Email address" name="email">
-                                        <button type="submit" class="footer-widget__newsletter-btn"><img
-                                                src="assets/images/icon/footer-widget-newsletter-send-icon.png"
-                                                alt=""></button>
-                                    </div>
-                                </form>
+                                <div class="site-footer__social" style="margin-top: 20px;">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                             <div class="footer-widget__column footer-widget__links clearfix">
-                                <h3 class="footer-widget__title">Links</h3>
+                                <h3 class="footer-widget__title">Quick Links</h3>
                                 <ul class="footer-widget__links-list list-unstyled clearfix">
-                                    <li><a href="about.html">About us</a></li>
-                                    <li><a href="team.html">Meet our team</a></li>
-                                    <li><a href="blog.html">News & media</a></li>
-                                    <li><a href="projects-page-1.html">Our projects</a></li>
-                                    <li><a href="contact.html">Contacts</a></li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="projects.html">Projects</a></li>
+                                    <li><a href="requestQuote.html">Request Quote</a></li>
+                                    <li><a href="career.html">Career</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                            <div class="footer-widget__column footer-widget__links clearfix">
+                                <h3 class="footer-widget__title">Services</h3>
+                                <ul class="footer-widget__links-list list-unstyled clearfix">
+                                    <li><a href="Custom-Software-Service.html">Customized Software Development</a></li>
+                                    <li><a href="Mobile-Web-App-Development.html">Mobile & Web Apps Development</a></li>
+                                    <li><a href="Finetech-Solution.html">SEO Optimization</a></li>
+                                    <li><a href="Website-Development.html">Website Development</a></li>
+                                    <li><a href="Graphic-Design.html">Graphic Design & Branding</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                            <div class="footer-widget__column footer-widget__links clearfix">
+                                <h3 class="footer-widget__title">Projects</h3>
+                                <ul class="footer-widget__links-list list-unstyled clearfix">
+                                    <li><a href="CGBox-project.html">CG Box Software</a></li>
+                                    <li><a href="Sahakaar.html">Sahakaar</a></li>
+                                    <li><a href="Vartika-project.html">Vartika - Payroll Management</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="500ms">
                             <div class="footer-widget__column footer-widget__contact clearfix">
-                                <h3 class="footer-widget__title">Contact</h3>
+                                <h3 class="footer-widget__title">Contact Info</h3>
                                 <ul class="footer-widget__contact-list list-unstyled clearfix">
                                     <li>
                                         <div class="icon">
                                             <span class="icon-telephone"></span>
                                         </div>
                                         <div class="text">
-                                            <p><a href="tel:980009850">+98 (000)-9850</a></p>
+                                            <p><a href="tel:9828035585">+91 9828035585</a></p>
                                         </div>
                                     </li>
                                     <li>
@@ -1104,7 +1140,7 @@
                                             <span class="icon-email"></span>
                                         </div>
                                         <div class="text">
-                                            <p><a href="mailto:needhelp@company.com">needhelp@company.com</a></p>
+                                            <p><a href="mailto:shinewellsofttech@gmail.com">shinewellsofttech@gmail.com</a></p>
                                         </div>
                                     </li>
                                     <li>
@@ -1112,20 +1148,10 @@
                                             <span class="icon-pin"></span>
                                         </div>
                                         <div class="text">
-                                            <p>66 broklyn golden street line <br> new york</p>
+                                            <p>Krishna Complex, 4th Floor Manji ka Hatta, Jodhpur Rajasthan, India</p>
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                            <div class="footer-widget__column footer-widget__social-box clearfix">
-                                <div class="site-footer__social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -1136,9 +1162,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="site-footer__bottom-inner">
-                                <p class="site-footer__bottom-text">© All Copyright 2022 by <a
-                                        href="#">Layerdrops.com</a>
-                                </p>
+                                <p class="site-footer__bottom-text">© Copyright 2024 <a href="index.html">Shinewell Softtech</a>. All Rights Reserved.</p>
                             </div>
                         </div>
                     </div>
